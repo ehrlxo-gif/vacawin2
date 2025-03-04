@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 폼</title>
+    <style>
+        .bullet {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <ul>
+                <li class="bullet">
+                    <label for="user-id">아이디:</label>
+                    <input type="text" id="user-id" name="user-id" required>
+                </li>
+                <li class="bullet">
+                    <label for="email">이메일:</label>
+                    <input type="email" id="email" name="email" required>
+                </li>
+                <li class="bullet">
+                    <label for="password">비밀번호:</label>
+                    <input type="password" id="password" name="password" required>
+                </li>
+                <li class="bullet">
+                    <label for="confirm-password">비밀번호 확인:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+            <label>
+                <input type="radio" name="newsletter" value="yes" checked>
+                메일 수신
+            </label>
+            <label>
+                <input type="radio" name="newsletter" value="no">
+                메일 수신 안 함
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>알게된 경로(복수 응답 가능)</legend>
+            <label>
+                <input type="checkbox" name="source" value="internet-search">
+                인터넷 검색
+            </label>
+            <label>
+                <input type="checkbox" name="source" value="friend-recommendation">
+                친구 추천
+            </label>
+            <label>
+                <input type="checkbox" name="source" value="sns-advertisement">
+                SNS 광고
+            </label>
+            <label>
+                <input type="checkbox" name="source" value="others">
+                기타
+            </label>
+            
+        </fieldset>
+        <br><br>
+        <button type="submit">가입하기</button>
+        <button type="reset">취소</button>
+    </form>
+</body>
+</html>

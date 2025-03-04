@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="main.js"></script>
+
+</head>
+<body>
+  <!--
+  <script>
+    document.write('Hello World!');
+    let str = prompt('이름을 입력하세요');
+    document.write(`${str}님을 환영합니다.`);
+  </script>
+  <script>
+    document.write('안녕하세요.');
+    console.log('확인하세요');
+    alert('경고');
+    console.log(`i\'m`);
+    let input = prompt(`숫자를 입력하세요.`)
+    console.log(typeof(input));
+    console.log(typeof(input*10));
+
+    let str1 = '10';
+    let st2 = 10;
+    str1 + str2;
+    
+    Number(Boolean(1));
+  -->
+    <script>
+    function oneMore(){
+      console.log('one one');
+    }
+    function run() {
+      console.log('run run');
+      setTimeout( () => {
+        console.log('wow');
+      }, 0)
+      new Promise((resolve) => {
+        resolve('hi');
+      })
+      .then(console.log);
+      oneMore();
+    }
+    setTimeout(run, 5000);
+  </script>
+  
+  어서 오세요.sayhello().
+  <h2 class="custom-blue-text">hello javascript</h2>
+  <input type="text" /><button onclick="alert('baby i`m hussh i`m hussh borandit')">버튼</button><br>
+  <input type="text" /><button onclick="alert('왓츄 세이 알 유 움직여 턴 옴 마 웨이이이이이 수 수 수퍼노비')">버튼2</button>
+  
+</body>
+</html>

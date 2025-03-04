@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃</title>
+    <style>
+       body {
+            background: url('../homework/땡깡망곰.png') repeat fixed;
+            background-size: cover;
+        }
+        
+        .maintxt {
+            color: black;
+            text-align: center;
+            font-size: 2em;
+            padding-top: 20%;
+        }
+        
+        .maintxt::before {
+            content: "밤양갱";
+        }
+       
+        @media only screen and (min-width: 1024px) {
+            body {
+                background: url('./땡깡망곰.png') no-repeat fixed;
+                background-size: cover;
+            }
+            .maintxt::before {
+                content: "사달라고";
+            }
+        }
+
+
+        @media only screen and (min-width: 680px) and (max-width: 1023px) {
+            body {
+                background: url('./망곰브이.jpg') no-repeat fixed;
+                background-size: cover;
+            }
+            .maintxt::before {
+                content: "갸루피스";
+            }
+        }
+
+        @media only screen and (max-width: 680px) and (orientation: portrait) {
+            body {
+                background: url('./헬로망곰.png') no-repeat fixed;
+                background-size: cover;
+            }
+            .maintxt::before {
+                content: "수고하십쇼";
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="maintxt"></h1>
+</body>
+</html>

@@ -1,0 +1,39 @@
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  transition:box-shadow 0.3s ease;
+}
+
+.btn:active {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.toast {
+  visibility: hidden; 
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; 
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+}
